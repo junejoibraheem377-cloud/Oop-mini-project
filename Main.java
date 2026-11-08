@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -7,32 +6,58 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        ArrayList<Student> students = new ArrayList<>();
+        StudentManager manager = new StudentManager();
 
         System.out.println("STUDENT MANAGEMENT SYSTEM");
 
-        System.out.print("Enter Student Name: ");
-        String name = input.nextLine();
+        while (true) {
 
-        System.out.print("Enter Roll Number: ");
-        int rollNo = input.nextInt();
-        input.nextLine();
+            System.out.println("\n1. Add Student");
+            System.out.println("2. Show Students");
+            System.out.println("3. Search Student");
+            System.out.println("4. Exit");
 
-        System.out.print("Enter Department: ");
-        String department = input.nextLine();
+            System.out.print("Enter Choice: ");
+            int choice = input.nextInt();
+            input.nextLine();
 
-        Student s1 = new Student(name, rollNo, department);
+            switch (choice) {
 
-        students.add(s1);
+                case 1:
+                    System.out.print("Enter Name: ");
+                    String name = input.nextLine();
 
-        System.out.println("\nStudent Added Successfully!");
+                    System.out.print("Enter Roll Number: ");
+                    int rollNo = input.nextInt();
+                    input.nextLine();
 
-        System.out.println("\nStudent Information:");
+                    System.out.print("Enter Department: ");
+                    String department = input.nextLine();
 
-        for (Student s : students) {
-            s.displayInfo();
+                    Student s = new Student(name, rollNo, department);
+
+                    manager.addStudent(s);
+                    break;
+
+                case 2:
+                    manager.showStudents();
+                    break;
+
+                case 3:
+                    System.out.print("Enter Roll Number: ");
+                    int searchRoll = input.nextInt();
+
+                    manager.searchStudent(searchRoll);
+                    break;
+
+                case 4:
+                    System.out.println("Thank You!");
+                    input.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid Choice!");
+            }
         }
-
-        input.close();
     }
 }
