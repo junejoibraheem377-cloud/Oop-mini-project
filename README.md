@@ -1,97 +1,145 @@
 
 # Student Management System
-### Java OOP & Data Structures Mini Project
+### Java OOP and Data Structures Mini Project
 
-**Developed by:** Ibraheem Junejo
+**Developed By:** Ibraheem Junejo
 
 ---
 
-## 1. Project Overview
+## 1. Introduction
 
 The Student Management System is a Java-based
-console application designed to manage student
-information efficiently.
+console application developed to manage student
+records efficiently.
 
 This project demonstrates the practical
 implementation of Object-Oriented Programming
-(OOP) and Data Structures concepts in Java.
+(OOP) and Data Structures concepts using Java.
 
 ## 2. Project Objectives
 
-- To manage student records.
-- To add new student information.
-- To display all student records.
-- To search students using roll numbers.
-- To understand practical Java programming.
+- To understand Java programming.
+- To implement the four pillars of OOP.
+- To manage student information.
+- To use ArrayList for storing student records.
+- To develop problem-solving skills.
 
 ## 3. Technologies Used
 
 - Programming Language: Java
 - Data Structure: ArrayList
-- IDE / Platform: Java-supported environment
 - Version Control: GitHub
+- Application Type: Console-Based Application
 
-## 4. OOP Concepts Implemented
+## 4. Four Pillars of OOP
 
-- **Encapsulation:** Private data members and
-  public getter methods.
-- **Classes and Objects:** Student and
-  StudentManager classes.
-- **Constructors:** Initialize student objects.
-- **Methods:** Organize program functionality.
+### 1. Encapsulation
+
+Encapsulation is implemented by declaring
+student data members as private.
+
+Getter methods provide controlled access
+to student information.
+
+### 2. Inheritance
+
+The Student class inherits the Person class
+using the extends keyword.
+
+### 3. Polymorphism
+
+Method overriding is implemented through
+the displayInfo() method.
+
+A Person reference can refer to a Student
+object, demonstrating runtime polymorphism.
+
+### 4. Abstraction
+
+The Person class is declared abstract.
+It contains an abstract displayInfo() method
+that is implemented by the Student class.
 
 ## 5. Data Structure Used
 
-**ArrayList**
+### ArrayList
 
-ArrayList is used to store and manage multiple
-student records dynamically.
+ArrayList is used to store multiple student
+objects dynamically.
 
-## 6. Project Features
+It allows student records to be added,
+displayed, and searched.
+
+## 6. Project Files Description
+
+### Student.java
+- Defines the Person abstract class.
+- Defines the Student class.
+- Implements all four OOP pillars.
+- Stores student information.
+- Provides getter methods.
+
+### StudentManager.java
+- Manages student records.
+- Adds new students.
+- Displays all students.
+- Searches students by roll number.
+- Uses ArrayList.
+
+### Main.java
+- Contains the main method.
+- Displays the application menu.
+- Takes input from the user.
+- Calls StudentManager methods.
+- Handles user choices.
+
+## 7. Main Features
 
 1. Add Student
-2. View All Students
+2. Display All Students
 3. Search Student by Roll Number
 4. Exit Application
 
-## 7. Project File Structure
-
-Student-Management-System/
-|
-|-- Student.java
-|-- StudentManager.java
-|-- Main.java
-|-- README.md
-
 ## 8. How to Run the Project
 
-1. Download or clone the repository.
-2. Open the project in a Java-supported IDE.
-3. Compile all Java files.
-4. Run the Main.java file.
-5. Follow the menu instructions.
+1. Download or clone the GitHub repository.
+2. Open the project in a Java IDE.
+3. Compile all Java source files.
+4. Run Main.java.
+5. Select an option from the menu.
 
 ## 9. Learning Outcomes
 
-Through this project, I gained practical
-experience in Java programming, OOP concepts,
-ArrayList, constructors, methods, and
-basic student record management.
+Through this project, I learned:
+
+- Java classes and objects.
+- Constructors and methods.
+- Encapsulation and data hiding.
+- Inheritance and code reusability.
+- Polymorphism and method overriding.
+- Abstraction using abstract classes.
+- ArrayList and basic searching.
+- Working with multiple Java files.
 
 ## 10. Conclusion
 
-This mini project represents the practical
-application of Java Object-Oriented Programming
-and Data Structures.
+The Student Management System is an academic
+mini project that demonstrates the practical
+use of Java OOP concepts and data structures.
 
-It helped me improve my programming skills
-and understand how different classes work
-together in a real-world application.
+It helped me understand how different classes
+interact and how student records can be managed
+through a simple console application.
 
 ---
 
-**Project Status:** Completed
+**Project Type:** Academic Mini Project
+
+**Subject:** Object-Oriented Programming and
+Data Structures
+
+**Language:** Java
 
 **Author:** Ibraheem Junejo
 
-**Academic Project:** OOP & Data Structures
+**Project Status:** Developed
